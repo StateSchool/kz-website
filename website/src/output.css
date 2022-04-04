@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -421,7 +423,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -466,21 +468,148 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.flex{
+  display: flex;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-grayX11Gray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(189 187 176 / var(--tw-bg-opacity));
+}
+
+.bg-middleGray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 137 124 / var(--tw-bg-opacity));
+}
+
+.bg-cultured{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pb-\[2\.5rem\]{
+  padding-bottom: 2.5rem;
+}
+
+.pb-0{
+  padding-bottom: 0px;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-0{
+  padding-top: 0px;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.font-lexendDeca{
+  font-family: Lexend Deca;
+}
+
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-bold {
+.font-bold{
   font-weight: 700;
 }
 
-.text-green-400 {
+.text-grayX11Gray{
   --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
+  color: rgb(189 187 176 / var(--tw-text-opacity));
 }
 
-.underline {
+.text-jet{
+  --tw-text-opacity: 1;
+  color: rgb(53 53 53 / var(--tw-text-opacity));
+}
+
+.underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.no-underline{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.odd\:absolute:nth-child(odd){
+  position: absolute;
 }
