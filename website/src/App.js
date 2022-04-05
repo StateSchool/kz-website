@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <div className="page-container relative min-h-screen bg-cultured font-lexendDeca">
+    <div className="page-container relative min-h-screen bg-white font-lexendDeca text-jet">
       <Header />
 
       <div className="content-wrap pb-[2.5rem]">
@@ -19,13 +19,13 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/RecordAndSong" element={<RecordAndSong />} />
-          <Route path="/TvAndFilm" element={<TvAndFilm />} /> 
-          <Route path="/Publishing" element={<Publishing />} /> 
-        </Routes>
+          <Route path="/TvAndFilm" element={<TvAndFilm />} />
+          <Route path="/Publishing" element={<Publishing />} />
+      </Routes>    
       </div>
       <Footer />
     </div>
   );
-}
+} 
 
 export default App;

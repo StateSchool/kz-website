@@ -1,0 +1,18 @@
+.nav-text:hover .rotated{
+
+display: inline-block; 
+transform: rotateY(-180deg);
+transition: 2s;  
+}
+
+
+
+.arrow, .arrow2{
+    display: none;
+}
+
+.nav-text:hover .arrow{
+    display: inline-block;
+    transition: 2s;
+}
+
