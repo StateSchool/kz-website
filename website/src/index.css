@@ -4,3 +4,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer{
+    @apply no-underline text-jet hover:text-lightGray
+}
+
+.nav-links{
+    @apply pl-4 text-xs no-underline text-jet hover:text-lightGray
+}

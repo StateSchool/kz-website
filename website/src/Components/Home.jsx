@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../vanilla.css'
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import Header from './Header';
 
 
 
@@ -22,9 +23,10 @@ export default function Home() {
 
   return (
     <div>
-      <ul className="text-2xl text-center py-5 pl-0 md:text-6xl ">
+      <Header />
+      <ul className="text-2xl text-center py-5 pl-0 md:mt-24 md:text-6xl lg:mt-52 xl:mt-10 2xl:mt-24">
         <Link to={"/About"} className="no-underline nav-text tracking-widest ">
-          <li className="my-14 text-middleGray">
+          <li className="mb-10 pb-2 text-middleGray">
             <div className="flex justify-center items-center">
               <span className="rotated">A</span>
               <span className="rotated">B</span>
@@ -35,7 +37,7 @@ export default function Home() {
               <img
                 src="../images/thin-right-arrow.png"
                 alt="arrow"
-                className="arrow w-16 mx-4"
+                className="arrow w-14 mx-4"
               />
 
               {/* {displayArrow ? (<img src="../images/thin-right-arrow.png" alt='arrow' onMouseEnter={(e) => setDisplayArrow(true)} />) :
@@ -55,7 +57,7 @@ export default function Home() {
           className="no-underline nav-text tracking-widest"
         >
           <li className="my-14 text-middleGray text-1xl  md:text-6xl">
-            <div className="px-5 md:flex justify-center items-center">
+            <div className="px-5 xl:flex justify-center items-center">
               {/* <span className="rotated">R</span>
             <span className="rotated">E</span>
             <span className="rotated">C</span>
@@ -90,7 +92,7 @@ export default function Home() {
               <span className="rotated">N</span>
               <span className="rotated">G</span>
 
-                <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-16 mx-4" />
+                <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-14 mx-4" />
             </div>
           </li>
         </Link>
@@ -110,7 +112,7 @@ export default function Home() {
               <span className="rotated">I</span>
               <span className="rotated">L</span>
               <span className="rotated">M</span>
-              <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-16 mx-4"/>
+              <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-14 mx-4"/>
             </div>
           </li>
         </Link>
@@ -131,7 +133,7 @@ export default function Home() {
               <span className="rotated">I</span>
               <span className="rotated">N</span>
               <span className="rotated">G</span>
-              <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-16 mx-4"/>
+              <img src="../images/thin-right-arrow.png" alt="arrow" className="arrow w-14 mx-4"/>
             </div>
           </li>
         </Link>

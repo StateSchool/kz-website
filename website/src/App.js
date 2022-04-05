@@ -12,7 +12,7 @@ import { Routes, Route } from "react-router-dom"
 function App() {
   return (
     <div className="page-container relative min-h-screen bg-white font-lexendDeca text-jet">
-      <Header />
+     
 
       <div className="content-wrap pb-[2.5rem]">
         <Routes>

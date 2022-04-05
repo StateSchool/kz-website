@@ -1,7 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export default function Publishing() {
   return (
-    <div>Publishing</div>
+   
+    <div>
+         <Navbar />
+    </div>
   )
 }
