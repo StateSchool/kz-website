@@ -5,7 +5,8 @@ export default function Publishing() {
   return (
    
     <div>
-         <Navbar />
+      <Navbar />
+      <h1>Publishing</h1>
     </div>
   )
 }

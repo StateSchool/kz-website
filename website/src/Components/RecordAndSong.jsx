@@ -5,6 +5,7 @@ export default function RecordAndSong() {
   return (
     <div>
       <Navbar />
+      <h1>Record and songs</h1>
     </div>
   )
 }

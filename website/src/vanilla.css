@@ -16,3 +16,16 @@ transition: 2s;
     transition: 2s;
 }
 
+
+.back2about:hover .about{
+    display: none;
+
+}
+
+.back2about .back{
+    display: none;
+}
+
+.back2about:hover .back{
+    display: inline;
+}
