@@ -4,6 +4,7 @@ import useSound from 'use-sound';
 import gameRetro from '../audio/audio.mp3';
 import Navbar from './Navbar';
 import '../vanilla.css'
+import Footer from './Footer';
 
 
 
@@ -11,9 +12,9 @@ export default function About() {
 
   const [play] = useSound(gameRetro);
   return (
-    <div className='overflow-hidden absolute h-full' >
+    <div className='pb-20 md:absolute md:pb-0' >
       <Navbar />
-      <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden  relative h-full'>
+      <div className='grid grid-cols-1  md:grid-cols-2 md:overflow-hidden  relative h-full '>
         <div className='overflow-hidden h-full'>
           <div className='px-10 pt-20 flex items-center'>
             <h1>/kei:zi/ (kay.zee)</h1>
@@ -35,7 +36,8 @@ export default function About() {
 
           <Link to={"/"} className="no-underline ">
             
-            <div className='flex items-center px-10 pt-28'>
+        <div className='flex items-center px-10 mt-20 '>
+          
               <img src="../images/thin-left-arrow.png" alt="left arrow" className='w-8 h-8 text-jet' />
               <div className="back2about text-jet hover:text-lightGray">
                 <h2 className="px-2 my-0 about">ABOUT</h2>
@@ -49,10 +51,11 @@ export default function About() {
         </div>
 
 
-        <img src="../images/kzimg1.png" alt="about"  className='-mt-28'/>
+        <img src="../images/kzimg1.png" alt="about"  className='-mt-10 md:-mt-10  '/>
 
       </div>
 
+        
 
     </div>
   )

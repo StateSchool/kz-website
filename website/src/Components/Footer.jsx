@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div>
       <div className="absolute bottom-0 w-full height-[2.5rem] text-Jet ">
-        <ul className="pl-0 text-xs flex justify-center pt-3 md:text-lg">
+        <ul className="pl-0 text-xs flex justify-center pt-3 md:text-lg ">
           <li className="mx-3">
            
             <a href="https://soundcloud.com/mrzeenius" className='footer' target="_blank" >SoundCloud</a>
