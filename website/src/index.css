@@ -10,5 +10,5 @@
 }
 
 .nav-links{
-    @apply pl-4 text-xl no-underline text-jet hover:text-lightGray md:text-xs
+    @apply pl-4 text-xl no-underline text-jet hover:text-lightGray md:text-sm
 }

@@ -512,44 +512,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3.5rem;
 }
 
-.-mt-3{
-  margin-top: -0.75rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mt-44{
-  margin-top: 11rem;
-}
-
-.-mt-28{
-  margin-top: -7rem;
-}
-
-.-mt-4{
-  margin-top: -1rem;
-}
-
-.mt-28{
-  margin-top: 7rem;
+.mt-20{
+  margin-top: 5rem;
 }
 
 .-mt-10{
   margin-top: -2.5rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
+.-mt-3{
+  margin-top: -0.75rem;
 }
 
-.-mt-20{
-  margin-top: -5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .flex{
@@ -616,10 +592,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -672,12 +644,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
+.pb-20{
+  padding-bottom: 5rem;
 }
 
-.pt-28{
-  padding-top: 7rem;
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pl-0{
@@ -702,22 +674,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-3{
   padding-left: 0.75rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pb-44{
-  padding-bottom: 11rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
 }
 
 .text-center{
@@ -800,8 +756,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px){
   .nav-links{
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -815,28 +771,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
   }
 
-  .md\:mt-24{
-    margin-top: 6rem;
-  }
-
-  .md\:-mt-28{
-    margin-top: -7rem;
-  }
-
-  .md\:-mt-24{
-    margin-top: -6rem;
-  }
-
-  .md\:-mt-20{
-    margin-top: -5rem;
-  }
-
-  .md\:-mt-14{
-    margin-top: -3.5rem;
-  }
-
   .md\:-mt-10{
     margin-top: -2.5rem;
+  }
+
+  .md\:mt-24{
+    margin-top: 6rem;
   }
 
   .md\:flex{
@@ -858,10 +798,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .md\:pb-20{
-    padding-bottom: 5rem;
   }
 
   .md\:pb-0{
@@ -895,16 +831,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:-mt-28{
-    margin-top: -7rem;
-  }
-
   .lg\:mt-52{
     margin-top: 13rem;
-  }
-
-  .lg\:overflow-hidden{
-    overflow: hidden;
   }
 }
 
