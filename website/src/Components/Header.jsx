@@ -14,7 +14,7 @@ export default function Header() {
               <a href="/" className='no-underline text-jet text-3xl hover:text-lightGray'>KZ</a> 
             </li>
             <Popup contentStyle={{ width: "200px", height: "50px", border: "2px solid #BDBBB0", fontFamily: "Lexend Deca,sans-serif", color:"#BDBBB0"}}trigger={<button className='text-jet'> Contact </button>} position="left center">
-              <div className='pl-4 py-1'><a href="mailto:kzdidit@gmail.com" className='no-underline text-middleGray hover:text-lightGray'> KzDidIt@gmail.com</a></div>
+              <div className='pl-4 py-1'><a href="mailto:kzdidit@gmail.com" className=' text-middleGray hover:text-lightGray'> KzDidIt@gmail.com</a></div>
               </Popup>
             </ul>
         </nav>

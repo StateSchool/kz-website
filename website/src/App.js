@@ -23,7 +23,7 @@ function App() {
           <Route path="/Publishing" element={<Publishing />} />
       </Routes>    
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 } 

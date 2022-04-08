@@ -20,8 +20,8 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p className=" text-xs flex justify-center -mt-3 md:text-sm">Copyright &copy; 2022</p>
-        <p className=" text-[10px] flex justify-center text-xs text-cultured md:text-xs">Designed by State School</p>
+        <p className=" text-xs flex justify-center -mt-3 md:text-sm md:mb-1 ">Copyright &copy; 2022</p>
+        <p className=" text-[10px] flex justify-center text-xs text-cultured md:text-xs md:mb-2 lg:mt-1 lg:mb-1">Designed by State School</p>
       </div>
     </div>
   );

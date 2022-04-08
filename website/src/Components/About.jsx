@@ -14,9 +14,9 @@ export default function About() {
   return (
     <div className='pb-20 md:absolute md:pb-0' >
       <Navbar />
-      <div className='grid grid-cols-1  md:grid-cols-2 md:overflow-hidden  relative h-full '>
-        <div className='overflow-hidden h-full'>
-          <div className='px-10 pt-20 flex items-center'>
+      <div className='grid grid-cols-1  md:grid-cols-2  '>
+        <div className=''>
+          <div className='px-10 pt-20 pb-6 flex items-center'>
             <h1>/kei:zi/ (kay.zee)</h1>
             <button onClick={play} className="px-3"> <img src="../images/speaker.png" alt="speaker" className="w-6" /></button>  
           </div>
