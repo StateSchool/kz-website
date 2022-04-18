@@ -79,7 +79,7 @@ export default function RecordAndSong() {
               <img
                 src="https://images.unsplash.com/photo-1648737966005-f6b62f4d4394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
                 class="d-block w-100"
-                alt="Sailboat 1"
+                alt="Feet"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
@@ -90,7 +90,7 @@ export default function RecordAndSong() {
               <img
                 src="https://images.unsplash.com/photo-1649835580608-167433f935f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1670&q=80"
                 class="d-block w-100"
-                alt="Feet"
+                alt="Tree"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
