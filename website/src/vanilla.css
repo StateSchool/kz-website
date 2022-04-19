@@ -29,3 +29,99 @@ transition: 2s;
 .back2about:hover .back{
     display: inline;
 }
+
+
+
+/*---------- HAMBURGER MENU CSS STYLES -------------*/
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: 5px;
+  top: 7px;
+  padding: 3px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #353535;
+  
+}
+
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0;
+  margin-left: 0;
+ 
+}
+
+.bm-menu{
+width: 100%;
+left: 0;
+position: absolute;
+
+}
+.bm-overlay{
+    display: none;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #353535;
+  padding: 2.5em 1.5em 0;
+  
+}
+
+
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+
+.menu-item{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 1100px){
+    .react-multi-carousel-dot{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1101px){
+.react-multi-carousel-dot{
+        display: none;
+    }
+
+}

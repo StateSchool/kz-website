@@ -1,134 +1,183 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Navbar from './Navbar'; 
 
+
 export default function RecordAndSong() {
+
+  const [showText, setShowText] = useState(false)
+  
+
+
+  const handleShow = () => {
+    setShowText(!showText);
+  }
+
+
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      // slidesToSlide: 3,
+      partialVisibilityGutter: 40,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      // slidesToSlide: 2,
+      partialVisibilityGutter: 30,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      // slidesToSlide: 1,
+      partialVisibilityGutter: 30,
+    },
+  };
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    return <button onClick={() => onClick()} />;
+  };
   return (
     <>
       <Navbar />
-      {/* <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1623279743107-152e86999257?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" alt="Third slide" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>These are earings </h5>
-              <p>On a desk </p>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Third slide" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>...</h5>
-              <p>...</p>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <img class="d-block w-100" src="https://unsplash.com/photos/LaGaPIayBrc" alt="Third slide" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>...</h5>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div> */}
-      <div class="container max-height d-flex align-items-center">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-bs-interval="5000"
-          data-bs-ride="carousel"
+      <div className="pb-32">
+        <Carousel
+          responsive={responsive}
+          partialVisible={false}
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          infinite={true}
+          // autoPlaySpeed={2000}
+          keyBoardControl={true}
+          // customTransition="all .5"
+          // transitionDuration={1000}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
         >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-current="true"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-current="true"
-              aria-label="Slide 3"
-            ></button>
+          <div>
+            <img
+              onClick={handleShow}
+              alt="amarae"
+              className="object-scale-down h-200 w-150 hover:bg-black"
+              src="./images/Amarae-carousel.png"
+            />
+            {showText ? (
+              <p className="absolute text-center top-50 left-50">
+                Please tell me this works i am not really sure what is going to
+                happen but hopefully this works
+              </p>
+            ) : (
+              <div></div>
+            )}
+            <h1>Amarae</h1>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://images.unsplash.com/photo-1648737966005-f6b62f4d4394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
-                class="d-block w-100"
-                alt="Feet"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some placeholder text to describe the image.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1649835580608-167433f935f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1670&q=80"
-                class="d-block w-100"
-                alt="Tree"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some placeholder text to describe the image.</p>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <img
-                src="https://unsplash.com/photos/5hX6zYpmkuk"
-                class="d-block w-100"
-                alt="Sailboat 3"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some placeholder text to describe the image.</p>
-              </div>
-            </div>
+
+          <div>
+            <img
+              onClick={handleShow}
+              alt="kojey"
+              className="object-scale-down h-200 w-150"
+              src="./images/KojeyRadical-carousel.png"
+            />
+            {showText ? (
+              <p className="absolute text-center top-50 left-50">
+                Yeah boys second image gang gang!!
+              </p>
+            ) : (
+              <div></div>
+            )}
+            <h1>Kojey Radical</h1>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div>
+          <div>
+            <img
+              alt="avelino"
+              className="object-scale-down h-200 w-150"
+              src="./images/Avelino-carousel.png"
+            />
+            <h1>Avelino</h1>
+          </div>
+          <div>
+            <img
+              alt="nsg"
+              className="object-scale-down h-200 w-150"
+              src="./images/nsg.png"
+            />
+            <h1>NSG</h1>
+          </div>
+
+          <div>
+            <img
+              alt="wretch"
+              className="object-scale-down h-200 w-150"
+              src="./images/Wretch32-carousel.png"
+            />
+            <h1>Wretch32</h1>
+          </div>
+
+          <div>
+            <img
+              alt="ms banks"
+              className="object-scale-down h-200 w-150"
+              src="./images/MsBanks-carousel.png"
+            />
+            <h1>Ms Banks</h1>
+          </div>
+
+          <div>
+            <img
+              alt="tion wayne"
+              className="object-scale-down h-200 w-150"
+              src="./images/tion.png"
+            />
+            <h1>Tion Wayne</h1>
+          </div>
+
+          <div>
+            <img
+              alt="nines"
+              className="object-scale-down h-200 w-150"
+              src="./images/Nines-carousel.png"
+            />
+            <h1>Nines</h1>
+          </div>
+
+          <div>
+            <img
+              alt="matt pokara"
+              className="object-scale-down h-200 w-150"
+              src="./images/MattPokora-carousel.png"
+            />
+            <h1>Matt Pokora</h1>
+          </div>
+
+          <div>
+            <img
+              alt="jacob banks"
+              className="object-scale-down h-200 w-150"
+              src="./images/JacobBanks-carousel.png"
+            />
+            <h1>Jacob Banks</h1>
+          </div>
+
+          <div>
+            <img
+              alt="steff london"
+              className="object-scale-down h-200 w-150"
+              src="./images/SteffLondon-carousel.png"
+            />
+            <h1>Steff London</h1>
+          </div>
+        </Carousel>
+      </div>
     </>
-  ); 
+  );
 }

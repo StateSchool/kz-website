@@ -1,17 +1,26 @@
 import React, { useState } from 'react'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { slide as Menu } from "react-burger-menu";
+import "../vanilla.css";
+
 
 export default function Navbar() {
 
+  
+
   const [navBarOpen, setNavBarOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const handleOpen = () => {
     setNavBarOpen(!navBarOpen)
   };
 
- 
+  const showMenu = () => {
+      setOpenMenu(!openMenu)
+  }
+
 
   return (
     <div>
@@ -67,7 +76,7 @@ export default function Navbar() {
         </nav>
 
         {/*------------------- MOBILE NAV ------------------------- */}
-        <nav className="pt-1 flex justify-between px-3 md:hidden">
+        <nav className="pt-1 flex items-center justify-between px-3 md:hidden relative">
           <Link
             to={"/"}
             className="no-underline text-jet text-3xl hover:text-lightGray"
@@ -75,15 +84,15 @@ export default function Navbar() {
             KZ
           </Link>
 
-          <button onClick={handleOpen} className="relative">
+          {/* <button onClick={handleOpen} className=" absolute top-0 right-0 ">
             {navBarOpen ? (
-              <ul className=" absolute right-0 top-0 px-3  pt-1 pb-2 md:px-5 bg-white w-screen h-screen z-10">
+              <ul className="top-0 right-0 px-3 pt-1 pb-2 md:px-5 w-screen h-screen ">
                 <img
                   src="../images/icons8-close.png"
                   alt="close"
                   className="w-8 py-1 pl-3"
                 />
-                <div className="items-center py-2 bg-white">
+                <div className="items-center py-2 bg-white w-full z-10">
                   <Link to={"/About"} className="nav-links">
                     <li>About</li>
                   </Link>
@@ -130,9 +139,28 @@ export default function Navbar() {
             <img
               src="../images/icons8-hamburger.png"
               alt="menu"
-              className="w-8"
+              className="w-8 fixed top-3 right-3"
             />
-          </button>
+          </button> */}
+
+          <Menu>
+            <Link to={"/"} className="menu-item">
+              HOME
+            </Link>
+            <Link to={"/About"} className="menu-item">
+              ABOUT
+            </Link>
+            <Link to={"/RecordAndSong"} className="menu-item">
+              PRODUCTION & SONG WRITING
+            </Link>
+            <Link to={"/TvAndFilm"} className="menu-item">
+              TV & FILM
+            </Link>
+            <Link to={"/Publishing"} className="menu-item">
+              PUBLISHING
+            </Link>
+            <a href="mailto:kzdidit@gmail.com" className='menu-item'>CONTACT</a>
+          </Menu>
         </nav>
       </div>
     </div>
