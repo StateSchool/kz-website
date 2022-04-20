@@ -2,19 +2,17 @@ import React, { useState } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Navbar from './Navbar'; 
+import "../vanilla.css";
+import { Link } from "react-router-dom";
+
 
 
 export default function RecordAndSong() {
-
-  const [showText, setShowText] = useState(false)
-  
-
+  const [showText, setShowText] = useState(false);
 
   const handleShow = () => {
     setShowText(!showText);
-  }
-
-
+  };
 
   const responsive = {
     desktop: {
@@ -178,6 +176,20 @@ export default function RecordAndSong() {
           </div>
         </Carousel>
       </div>
+
+      <Link to={"/"} className="no-underline ">
+        <div className="flex items-center px-10 mt-2 mb-20 ">
+          <img
+            src="../images/thin-left-arrow.png"
+            alt="left arrow"
+            className="w-8 h-8 text-jet"
+          />
+          <div className="back2about text-jet hover:text-lightGray">
+            <h2 className="px-2 my-0 about">PRODUCTION & SONGWRITING</h2>
+            <h2 className="back hover:text-lightGray">BACK</h2>
+          </div>
+        </div>
+      </Link>
     </>
   );
 }
