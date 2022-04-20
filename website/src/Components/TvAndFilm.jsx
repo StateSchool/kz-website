@@ -1,12 +1,196 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React, { useState } from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Navbar from './Navbar';
+import "../vanilla.css";
+import { Link } from "react-router-dom";
+
+
 
 export default function TvAndFilm() {
-  return (
-    <div>
-      <Navbar />
-      <h1>TVandFilm</h1>
+  const [showText, setShowText] = useState(false);
 
-    </div>
-  )
+  const handleShow = () => {
+    setShowText(!showText);
+  };
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      // slidesToSlide: 3,
+      partialVisibilityGutter: 40,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      // slidesToSlide: 2,
+      partialVisibilityGutter: 30,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      // slidesToSlide: 1,
+      partialVisibilityGutter: 30,
+    },
+  };
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    return <button onClick={() => onClick()} />;
+  };
+  return (
+    <>
+      <Navbar />
+      <div className="pb-32">
+        <Carousel
+          responsive={responsive}
+          partialVisible={false}
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          infinite={true}
+          // autoPlaySpeed={2000}
+          keyBoardControl={true}
+          // customTransition="all .5"
+          // transitionDuration={1000}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div>
+            <img
+              onClick={handleShow}
+              alt="amarae"
+              className="object-scale-down h-200 w-150 hover:bg-black"
+              src="./images/Amarae-carousel.png"
+            />
+            {showText ? (
+              <p className="absolute text-center top-50 left-50">
+                Please tell me this works i am not really sure what is going to
+                happen but hopefully this works
+              </p>
+            ) : (
+              <div></div>
+            )}
+            <h1>Amarae</h1>
+          </div>
+
+          <div>
+            <img
+              onClick={handleShow}
+              alt="kojey"
+              className="object-scale-down h-200 w-150"
+              src="./images/KojeyRadical-carousel.png"
+            />
+            {showText ? (
+              <p className="absolute text-center top-50 left-50">
+                Yeah boys second image gang gang!!
+              </p>
+            ) : (
+              <div></div>
+            )}
+            <h1>Kojey Radical</h1>
+          </div>
+          <div>
+            <img
+              alt="avelino"
+              className="object-scale-down h-200 w-150"
+              src="./images/Avelino-carousel.png"
+            />
+            <h1>Avelino</h1>
+          </div>
+          <div>
+            <img
+              alt="nsg"
+              className="object-scale-down h-200 w-150"
+              src="./images/nsg.png"
+            />
+            <h1>NSG</h1>
+          </div>
+
+          <div>
+            <img
+              alt="wretch"
+              className="object-scale-down h-200 w-150"
+              src="./images/Wretch32-carousel.png"
+            />
+            <h1>Wretch32</h1>
+          </div>
+
+          <div>
+            <img
+              alt="ms banks"
+              className="object-scale-down h-200 w-150"
+              src="./images/MsBanks-carousel.png"
+            />
+            <h1>Ms Banks</h1>
+          </div>
+
+          <div>
+            <img
+              alt="tion wayne"
+              className="object-scale-down h-200 w-150"
+              src="./images/tion.png"
+            />
+            <h1>Tion Wayne</h1>
+          </div>
+
+          <div>
+            <img
+              alt="nines"
+              className="object-scale-down h-200 w-150"
+              src="./images/Nines-carousel.png"
+            />
+            <h1>Nines</h1>
+          </div>
+
+          <div>
+            <img
+              alt="matt pokara"
+              className="object-scale-down h-200 w-150"
+              src="./images/MattPokora-carousel.png"
+            />
+            <h1>Matt Pokora</h1>
+          </div>
+
+          <div>
+            <img
+              alt="jacob banks"
+              className="object-scale-down h-200 w-150"
+              src="./images/JacobBanks-carousel.png"
+            />
+            <h1>Jacob Banks</h1>
+          </div>
+
+          <div>
+            <img
+              alt="steff london"
+              className="object-scale-down h-200 w-150"
+              src="./images/SteffLondon-carousel.png"
+            />
+            <h1>Steff London</h1>
+          </div>
+        </Carousel>
+      </div>
+
+      <Link to={"/"} className="no-underline ">
+        <div className="flex items-center px-10 mt-2 mb-20 ">
+          <img
+            src="../images/thin-left-arrow.png"
+            alt="left arrow"
+            className="w-8 h-8 text-jet"
+          />
+          <div className="back2about text-jet hover:text-lightGray">
+            <h2 className="px-2 my-0 about">TV & FILM</h2>
+            <h2 className="back hover:text-lightGray">BACK</h2>
+          </div>
+        </div>
+      </Link>
+    </>
+  );
 }
+
