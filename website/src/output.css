@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -524,6 +524,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3.5rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -782,6 +787,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   .nav-links{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+.carousel-mobile-title{
+  position: relative;
+  top: 2.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .carousel-mobile-title{
+    display: none;
+  }
+}
+
+.carousel-desktop-title{
+  display: none;
+  padding-left: 0.25rem;
+}
+
+@media (min-width: 768px){
+  .carousel-desktop-title{
+    display: flex;
   }
 }
 

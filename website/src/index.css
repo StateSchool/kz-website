@@ -12,3 +12,11 @@
 .nav-links{
     @apply pl-4 text-xl no-underline text-jet hover:text-lightGray md:text-sm
 }
+
+.carousel-mobile-title{
+    @apply text-gray-400 px-1 pt-2 relative top-10 md:hidden
+}
+
+.carousel-desktop-title{
+    @apply hidden md:flex pl-1
+}

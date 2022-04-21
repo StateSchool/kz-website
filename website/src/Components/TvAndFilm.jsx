@@ -8,11 +8,12 @@ import { Link } from "react-router-dom";
 
 
 export default function TvAndFilm() {
-  const [showText, setShowText] = useState(false);
 
-  const handleShow = () => {
-    setShowText(!showText);
-  };
+  // const [showText, setShowText] = useState(false);
+
+  // const handleShow = () => {
+  //   setShowText(!showText);
+  // };
 
   const responsive = {
     desktop: {
@@ -62,118 +63,44 @@ export default function TvAndFilm() {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
+            <h1 className="carousel-mobile-title">George - Asda</h1>
             <img
-              onClick={handleShow}
-              alt="amarae"
+              // onClick={handleShow}
+              alt="asda advert"
               className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/Amarae-carousel.png"
+              src="./images/ASDA-carousel.png"
             />
-            {showText ? (
+            {/* {showText ? (
               <p className="absolute text-center top-50 left-50">
                 Please tell me this works i am not really sure what is going to
                 happen but hopefully this works
               </p>
             ) : (
               <div></div>
-            )}
-            <h1>Amarae</h1>
+            )} */}
+            <h1 className="carousel-desktop-title">George - Asda</h1>
           </div>
 
           <div>
+            <h1 className="carousel-mobile-title">Top Boy - Netflix</h1>
             <img
-              onClick={handleShow}
-              alt="kojey"
-              className="object-scale-down h-200 w-150"
-              src="./images/KojeyRadical-carousel.png"
+              alt="topboy "
+              className="object-scale-down h-200 w-150 hover:bg-black"
+              src="./images/Topboy-carousel.png"
             />
-            {showText ? (
-              <p className="absolute text-center top-50 left-50">
-                Yeah boys second image gang gang!!
-              </p>
-            ) : (
-              <div></div>
-            )}
-            <h1>Kojey Radical</h1>
-          </div>
-          <div>
-            <img
-              alt="avelino"
-              className="object-scale-down h-200 w-150"
-              src="./images/Avelino-carousel.png"
-            />
-            <h1>Avelino</h1>
-          </div>
-          <div>
-            <img
-              alt="nsg"
-              className="object-scale-down h-200 w-150"
-              src="./images/nsg.png"
-            />
-            <h1>NSG</h1>
+            <h1 className="carousel-desktop-title">Top Boy - Netflix</h1>
           </div>
 
           <div>
+            <h1 className="carousel-mobile-title">Mood - BBC3</h1>
             <img
-              alt="wretch"
+              alt="mood"
               className="object-scale-down h-200 w-150"
-              src="./images/Wretch32-carousel.png"
+              src="./images/Mood-carousel.png"
             />
-            <h1>Wretch32</h1>
+            <h1 className="carousel-desktop-title">Mood - BBC3</h1>
           </div>
-
-          <div>
-            <img
-              alt="ms banks"
-              className="object-scale-down h-200 w-150"
-              src="./images/MsBanks-carousel.png"
-            />
-            <h1>Ms Banks</h1>
-          </div>
-
-          <div>
-            <img
-              alt="tion wayne"
-              className="object-scale-down h-200 w-150"
-              src="./images/tion.png"
-            />
-            <h1>Tion Wayne</h1>
-          </div>
-
-          <div>
-            <img
-              alt="nines"
-              className="object-scale-down h-200 w-150"
-              src="./images/Nines-carousel.png"
-            />
-            <h1>Nines</h1>
-          </div>
-
-          <div>
-            <img
-              alt="matt pokara"
-              className="object-scale-down h-200 w-150"
-              src="./images/MattPokora-carousel.png"
-            />
-            <h1>Matt Pokora</h1>
-          </div>
-
-          <div>
-            <img
-              alt="jacob banks"
-              className="object-scale-down h-200 w-150"
-              src="./images/JacobBanks-carousel.png"
-            />
-            <h1>Jacob Banks</h1>
-          </div>
-
-          <div>
-            <img
-              alt="steff london"
-              className="object-scale-down h-200 w-150"
-              src="./images/SteffLondon-carousel.png"
-            />
-            <h1>Steff London</h1>
-          </div>
+       
         </Carousel>
       </div>
 
