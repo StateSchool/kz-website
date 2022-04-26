@@ -85,37 +85,12 @@ export default function RecordAndSong() {
           <div>
             <h1 className="carousel-mobile-title">Kojey Radical</h1>
             <img
-              // onClick={handleShow}
               alt="kojey"
               className="object-scale-down h-200 w-150"
               src="./images/KojeyRadical-carousel.png"
             />
-            {/* {showText ? (
-              <p className="absolute text-center top-50 left-50">
-                Yeah boys second image gang gang!!
-              </p>
-            ) : (
-              <div></div>
-            )} */}
+           
             <h1 className="carousel-desktop-title">Kojey Radical</h1>
-          </div>
-          <div>
-            <h1 className="carousel-mobile-title">Avelino</h1>
-            <img
-              alt="avelino"
-              className="object-scale-down h-200 w-150"
-              src="./images/Avelino-carousel.png"
-            />
-            <h1 className="carousel-desktop-title">Avelino</h1>
-          </div>
-          <div>
-            <h1 className="carousel-mobile-title">NSG</h1>
-            <img
-              alt="nsg"
-              className="object-scale-down h-200 w-150"
-              src="./images/nsg.png"
-            />
-            <h1 className="carousel-desktop-title">NSG</h1>
           </div>
 
           <div>
@@ -136,6 +111,36 @@ export default function RecordAndSong() {
               src="./images/MsBanks-carousel.png"
             />
             <h1 className="carousel-desktop-title">Ms Banks</h1>
+          </div>
+          
+          <div>
+            <h1 className="carousel-mobile-title">Avelino</h1>
+            <img
+              alt="avelino"
+              className="object-scale-down h-200 w-150"
+              src="./images/Avelino-carousel.png"
+            />
+            <h1 className="carousel-desktop-title">Avelino</h1>
+          </div>
+
+          <div>
+            <h1 className="carousel-mobile-title">NSG</h1>
+            <img
+              alt="nsg"
+              className="object-scale-down h-200 w-150"
+              src="./images/nsg.png"
+            />
+            <h1 className="carousel-desktop-title">NSG</h1>
+          </div>
+
+          <div>
+            <h1 className="carousel-mobile-title">Matt Pokora</h1>
+            <img
+              alt="matt pokara"
+              className="object-scale-down h-200 w-150"
+              src="./images/MattPokora-carousel.png"
+            />
+            <h1 className="carousel-desktop-title">Matt Pokora</h1>
           </div>
 
           <div>
@@ -159,14 +164,16 @@ export default function RecordAndSong() {
           </div>
 
           <div>
-            <h1 className="carousel-mobile-title">Matt Pokora</h1>
+            <h1 className="carousel-mobile-title">Steff London</h1>
             <img
-              alt="matt pokara"
+              alt="steff london"
               className="object-scale-down h-200 w-150"
-              src="./images/MattPokora-carousel.png"
+              src="./images/SteffLondon-carousel.png"
             />
-            <h1 className="carousel-desktop-title">Matt Pokora</h1>
+            <h1 className="carousel-desktop-title">Steff London</h1>
           </div>
+
+
 
           <div>
             <h1 className="carousel-mobile-title">Jacob Banks</h1>
@@ -178,15 +185,7 @@ export default function RecordAndSong() {
             <h1 className="carousel-desktop-title">Jacob Banks</h1>
           </div>
 
-          <div>
-            <h1 className="carousel-mobile-title">Steff London</h1>
-            <img
-              alt="steff london"
-              className="object-scale-down h-200 w-150"
-              src="./images/SteffLondon-carousel.png"
-            />
-            <h1 className="carousel-desktop-title">Steff London</h1>
-          </div>
+          
         </Carousel>
       </div>
 
