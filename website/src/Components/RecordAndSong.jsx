@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React from 'react'; 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Navbar from './Navbar'; 
@@ -10,11 +10,6 @@ import { Link } from "react-router-dom";
 export default function RecordAndSong() {
 
 
-  // const [showText, setShowText] = useState(false);
-
-  // const handleShow = () => {
-  //   setShowText(!showText);
-  // };
 
   const responsive = {
     desktop: {
@@ -69,19 +64,12 @@ export default function RecordAndSong() {
           <div>
             <h1 className="carousel-mobile-title">Amarae</h1>
             <img
-              // onClick={handleShow}
+        
               alt="amarae"
               className="object-scale-down h-200 w-150 hover:bg-black"
               src="./images/Amarae-carousel.png"
             />
-            {/* {showText ? (
-              <p className="absolute text-center top-50 left-50">
-                Please tell me this works i am not really sure what is going to
-                happen but hopefully this works
-              </p>
-            ) : (
-              <div></div>
-            )} */}
+            
             <h1 className="carousel-desktop-title">Amarae</h1>
           </div>
 

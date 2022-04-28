@@ -4,7 +4,7 @@ import useSound from 'use-sound';
 import gameRetro from '../audio/audio.mp3';
 import Navbar from './Navbar';
 import '../vanilla.css'
-import Footer from './Footer';
+
 
 
 
@@ -23,16 +23,12 @@ export default function About() {
           
           
 
-          <p className="px-10">Dessert shortbread dessert ice cream cupcake apple pie dragée jujubes. Apple pie carrot cake pudding chocolate cake fruitcake sugar plum sweet roll lemon drops. Topping carrot cake jelly beans cake tiramisu sugar plum pudding. Chocolate bar cupcake bear claw lemon drops oat cake toffee toffee.</p>
+          <p className="px-10">English producer KZ is no stranger to the music industry. Influenced by artists such as John Mayer, Pharrell Williams or Prince, the English artist is painting a colourful and unique sound that conquered the UK and other places around the world. Over the years, he worked with Emeli Sandé, Professor Green, Avelino, Kojey Radical, Wretch 32, Jacob Banks, K Michelle, Jeremih, and many more. <br/> <br/><a href="https://www.threadofficial.com/stories/2018/10/16/kz" className='no-underline text-black'><span className='flex justify-end pr-2 italic md:pr-6'>- Thread</span></a></p>
 
           {/* <p>Tiramisu ice cream lollipop tart topping chocolate bar halvah cheesecake tiramisu. Toffee chocolate cake muffin bonbon gummi bears carrot cake marshmallow. Halvah biscuit carrot cake cotton candy topping carrot cake gummies fruitcake cupcake. Liquorice cotton candy jelly beans marzipan jelly pastry.</p> */}
 
-          <p className="px-10">Biscuit sugar plum chocolate candy powder cupcake chocolate cake halvah chocolate cake. Jelly beans gummies cheesecake shortbread cake. Bear claw sweet roll cheesecake cake cupcake cake topping jelly-o.</p>
+          {/* <p className="px-10">Biscuit sugar plum chocolate candy powder cupcake chocolate cake halvah chocolate cake. Jelly beans gummies cheesecake shortbread cake. Bear claw sweet roll cheesecake cake cupcake cake topping jelly-o.</p> */}
 
-          {/* <p className="px-10">Biscuit topping icing chupa chups carrot cake liquorice pudding tootsie roll. Sweet roll muffin sweet roll lemon drops jelly carrot cake soufflé. Pie tootsie roll caramels candy canes donut apple pie wafer danish liquorice.</p>
-
-          <p className="px-10">Soufflé macaroon jelly beans cookie cookie cotton candy. Powder bonbon chocolate cake gummi bears chupa chups sesame snaps ice cream powder. Chocolate cake apple pie pie chupa chups cupcake gummi bears macaroon cotton candy. Pie gingerbread apple pie candy canes topping.</p> */}
-        
 
           <Link to={"/"} className="no-underline ">
             

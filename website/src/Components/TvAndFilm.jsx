@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Navbar from './Navbar';
@@ -9,11 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function TvAndFilm() {
 
-  // const [showText, setShowText] = useState(false);
 
-  // const handleShow = () => {
-  //   setShowText(!showText);
-  // };
 
   const responsive = {
     desktop: {
