@@ -46,11 +46,14 @@ export default function RecordAndSong() {
   return (
     <>
       <Navbar />
-      <div className="pb-32 ">
+      <h2 className="pl-4 mt-5 text-[23px] text-lightGray md:hidden">
+        PRODUCTION & SONGWRITING
+      </h2>
+      <div className="pb-14 ">
         <Carousel
           responsive={responsive}
           partialVisible={false}
-          swipeable={false}
+          swipeable={true}
           draggable={false}
           showDots={true}
           infinite={true}
@@ -89,7 +92,7 @@ export default function RecordAndSong() {
               className="object-scale-down h-200 w-150"
               src="./images/KojeyRadical-carousel.png"
             />
-           
+
             <h1 className="carousel-desktop-title">Kojey Radical</h1>
           </div>
 
@@ -112,7 +115,7 @@ export default function RecordAndSong() {
             />
             <h1 className="carousel-desktop-title">Ms Banks</h1>
           </div>
-          
+
           <div>
             <h1 className="carousel-mobile-title">Avelino</h1>
             <img
@@ -173,8 +176,6 @@ export default function RecordAndSong() {
             <h1 className="carousel-desktop-title">Steff London</h1>
           </div>
 
-
-
           <div>
             <h1 className="carousel-mobile-title">Jacob Banks</h1>
             <img
@@ -184,21 +185,22 @@ export default function RecordAndSong() {
             />
             <h1 className="carousel-desktop-title">Jacob Banks</h1>
           </div>
-
-          
         </Carousel>
       </div>
 
       <Link to={"/"} className="no-underline ">
-        <div className="flex items-center px-10 mt-2 mb-20 mx-auto">
+        <div className="flex items-center px-10 pb-20 md:mt-20 ">
           <img
             src="../images/thin-left-arrow.png"
             alt="left arrow"
             className="w-8 h-8 text-jet"
           />
           <div className="back2about text-jet hover:text-lightGray">
-            <h2 className="px-2 my-0 about">PRODUCTION & SONGWRITING</h2>
-            <h2 className="back hover:text-lightGray">BACK</h2>
+            <h2 className="hidden md:flex px-2 my-0 about">PRODUCTION & SONGWRITING</h2>
+            <h2 className="hidden back hover:text-lightGray">BACK</h2>
+            <h2 className=" px-2 items-center pt-2 text-lightGray md:hidden">
+              BACK
+            </h2>
           </div>
         </div>
       </Link>

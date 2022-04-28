@@ -5,45 +5,70 @@ import Navbar from './Navbar'
 
 export default function Publishing() {
   return (
-   
     <div>
       <Navbar />
-      <div className='grid grid-cols-1  md:grid-cols-2  '>
-        <div className=''>
-          <div className='px-10 pt-20 pb-6 flex items-center'>
-            <h1>TryBe </h1>
+      <h1 className="px-7  mt-5 text-lightGray md:hidden">PUBLISHING</h1>
+      <div className="grid grid-cols-1  md:grid-cols-2  ">
+        <div className="">
+          <div className="px-7 md:px-6 pt-10 pb-6 flex items-center">
+            <h1>TRYB </h1>
           </div>
-          <p className="px-10">Dessert shortbread dessert ice cream cupcake apple pie dragée jujubes. Apple pie carrot cake pudding chocolate cake fruitcake sugar plum sweet roll lemon drops. Topping carrot cake jelly beans cake tiramisu sugar plum pudding. Chocolate bar cupcake bear claw lemon drops oat cake toffee toffee.</p>
+          <p className="px-8">
+            TRYB, A publishing/Entertainment company done right! TRYB is a new
+            progressive publishing house set up by creatives FOR creatives.
+            Headed by Record producer and songwriter KZ and Record Exec and
+            Manager Ashley Sky. TRYB’s mission is simply to get the creative
+            into places and position of opportunity and power, we are all about
+            elevating and expanding upon the visions of the writers we sign. We
+            believe transparency, fairness and honesty are at the root of what
+            good business looks in this new evolving space we call the
+            entertainment industry. To long have artist and writers been
+            exploited by the lack of information and access to how the industry
+            operates until its too late.
+          </p>
 
-          {/* <p>Tiramisu ice cream lollipop tart topping chocolate bar halvah cheesecake tiramisu. Toffee chocolate cake muffin bonbon gummi bears carrot cake marshmallow. Halvah biscuit carrot cake cotton candy topping carrot cake gummies fruitcake cupcake. Liquorice cotton candy jelly beans marzipan jelly pastry.</p> */}
+          <p className="px-8">
+            TRYB is committed to changing that practice by offering sensible
+            deals that allow the artist plenty of room for growth, By
+            understanding their taste and matching them to the best of our
+            abilities with the right sessions, meetings and opportunities. TRYB
+            is also committed to exploring new forms of collaboration for
+            recoupment such as music libraries, NFT’S, Scoring and sound track
+            production and sonics for the metavers. As a Progressive platform,
+            TRYB uses their extensive network & resource to reach out
+            particularly to talent from marginalised countries and backgrounds
+            most importantly Women, Black, brown & people of colour.
+          </p>
 
-          <p className="px-10">Biscuit sugar plum chocolate candy powder cupcake chocolate cake halvah chocolate cake. Jelly beans gummies cheesecake shortbread cake. Bear claw sweet roll cheesecake cake cupcake cake topping jelly-o.</p>
-
-          {/* <p className="px-10">Biscuit topping icing chupa chups carrot cake liquorice pudding tootsie roll. Sweet roll muffin sweet roll lemon drops jelly carrot cake soufflé. Pie tootsie roll caramels candy canes donut apple pie wafer danish liquorice.</p>
-
-          <p className="px-10">Soufflé macaroon jelly beans cookie cookie cotton candy. Powder bonbon chocolate cake gummi bears chupa chups sesame snaps ice cream powder. Chocolate cake apple pie pie chupa chups cupcake gummi bears macaroon cotton candy. Pie gingerbread apple pie candy canes topping.</p> */}
-
+          <p className="px-8">
+            As the pandemic brought the entire world to a stand still it also
+            brought an opportunity to reflect. A moment to reflect on what isn’t
+            working in our world but also in our music industry. Upon such
+            reflection, TRYB was born. Born to help re-shape the industry as we
+            know it. Dedicated to using their extensive network in France,
+            Africa , LA and The UK to pool together their resources to combat
+            inequality within music and the music business. We believe in
+            Ethical business, Authenticity and big impactful songs.
+          </p>
 
           <Link to={"/"} className="no-underline ">
-
-            <div className='flex items-center px-10 mt-20 '>
-
-              <img src="../images/thin-left-arrow.png" alt="left arrow" className='w-8 h-8 text-jet' />
+            <div className="flex items-center px-10 pb-20 md:mt-20 ">
+              <img
+                src="../images/thin-left-arrow.png"
+                alt="left arrow"
+                className="w-8 h-8 text-jet"
+              />
               <div className="back2about text-jet hover:text-lightGray">
-                <h2 className="px-2 my-0 about">PUBLISHING</h2>
-                <h2 className="back hover:text-lightGray">BACK</h2>
+                <h2 className="hidden md:flex px-2 my-0 about">PUBLISHING</h2>
+                <h2 className="hidden back hover:text-lightGray">BACK</h2>
+                <h2 className=" px-2 items-center pt-2 text-lightGray md:hidden">
+                  BACK
+                </h2>
               </div>
-
             </div>
           </Link>
-
-
         </div>
-
-
-        <img src="../images/kzimg1.png" alt="about" className='-mt-10 md:-mt-10  ' />
-
       </div>
     </div>
-  )
+  );
 }
