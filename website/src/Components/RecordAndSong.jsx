@@ -67,7 +67,7 @@ export default function RecordAndSong() {
         
               alt="amarae"
               className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/Amarae-carousel.png"
+              src="./images/Amarae.png"
             />
             
             <h1 className="carousel-desktop-title">Amarae</h1>
@@ -83,7 +83,15 @@ export default function RecordAndSong() {
 
             <h1 className="carousel-desktop-title">Kojey Radical</h1>
           </div>
-
+          <div>
+            <h1 className="carousel-mobile-title">Stormzy</h1>
+            <img
+              alt="Stormzy"
+              className="object-scale-down h-200 w-150"
+              src="./images/Stormzy.png"
+            />
+            <h1 className="carousel-desktop-title">Stormzy</h1>
+          </div>
           <div>
             <h1 className="carousel-mobile-title">Wretch32</h1>
             <img
@@ -172,6 +180,43 @@ export default function RecordAndSong() {
               src="./images/JacobBanks-carousel.png"
             />
             <h1 className="carousel-desktop-title">Jacob Banks</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">Tiggz da Author</h1>
+            <img
+              alt="Tiggz da Author"
+              className="object-scale-down h-200 w-150"
+              src="./images/TiggsdaAuthor.png"
+            />
+            <h1 className="carousel-desktop-title">Tiggz da Author</h1>
+          </div>
+        
+          <div>
+            <h1 className="carousel-mobile-title">Ray Blk </h1>
+            <img
+              alt="Ray Blk "
+              className="object-scale-down h-200 w-150"
+              src="./images/RayBlk.png"
+            />
+            <h1 className="carousel-desktop-title">Ray Blk </h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">The Prodigy</h1>
+            <img
+              alt="The Prodigy"
+              className="object-scale-down h-200 w-150"
+              src="./images/Mood-carousel.png"
+            />
+            <h1 className="carousel-desktop-title">The Prodigy</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">Professor Green</h1>
+            <img
+              alt="Professor Green"
+              className="object-scale-down h-200 w-150"
+              src="./images/ProfessorGreen.png"
+            />
+            <h1 className="carousel-desktop-title">Professor Green</h1>
           </div>
         </Carousel>
       </div>

@@ -99,6 +99,51 @@ export default function TvAndFilm() {
             />
             <h1 className="carousel-desktop-title">Mood - BBC3</h1>
           </div>
+          <div>
+            <h1 className="carousel-mobile-title">I May Destroy You - BBC1</h1>
+            <img
+              alt="I May Destroy You "
+              className="object-scale-down h-200 w-150"
+              src="./images/IMayDestroyYou.png"
+            />
+            <h1 className="carousel-desktop-title">I May Destroy You - BBC1</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">Land Rover</h1>
+            <img
+              alt="Land Rover "
+              className="object-scale-down h-200 w-150"
+              src="./images/RangeRover .png"
+            />
+            <h1 className="carousel-desktop-title">Land Rover</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">Champions League/Wretch 32</h1>
+            <img
+              alt="Champions League - Wretch 32"
+              className="object-scale-down h-200 w-150"
+              src="./images/ChampionsLeague.png"
+            />
+            <h1 className="carousel-desktop-title">Champions League/Wretch 32</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">Ibis Hotel</h1>
+            <img
+              alt="Ibis Hotel"
+              className="object-scale-down h-200 w-150"
+              src="./images/Ibis.png"
+            />
+            <h1 className="carousel-desktop-title">Ibis Hotel</h1>
+          </div>
+          <div>
+            <h1 className="carousel-mobile-title">The 8 Club </h1>
+            <img
+              alt="The Eight Club "
+              className="object-scale-down h-200 w-150"
+              src="./images/The8Club.png"
+            />
+            <h1 className="carousel-desktop-title">The 8 Club</h1>
+          </div>
         </Carousel>
       </div>
 
