@@ -62,12 +62,12 @@ export default function RecordAndSong() {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
-            <h1 className="carousel-mobile-title">Amarae</h1>
+            <h1 className="carousel-mobile-title">Amaarae</h1>
             <img
         
               alt="amarae"
               className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/Amarae.png"
+              src="./images/Music/Amarae.png"
             />
             
             <h1 className="carousel-desktop-title">Amarae</h1>
@@ -78,7 +78,7 @@ export default function RecordAndSong() {
             <img
               alt="kojey"
               className="object-scale-down h-200 w-150"
-              src="./images/KojeyRadical-carousel.png"
+              src="./images/Music/KojeyRadical-carousel.png"
             />
 
             <h1 className="carousel-desktop-title">Kojey Radical</h1>
@@ -88,7 +88,7 @@ export default function RecordAndSong() {
             <img
               alt="Stormzy"
               className="object-scale-down h-200 w-150"
-              src="./images/Stormzy.png"
+              src="./images/Music/Stormzy.png"
             />
             <h1 className="carousel-desktop-title">Stormzy</h1>
           </div>
@@ -97,7 +97,7 @@ export default function RecordAndSong() {
             <img
               alt="wretch"
               className="object-scale-down h-200 w-150"
-              src="./images/Wretch32-carousel.png"
+              src="./images/Music/Wretch32-carousel.png"
             />
             <h1 className="carousel-desktop-title">Wretch32</h1>
           </div>
@@ -107,7 +107,7 @@ export default function RecordAndSong() {
             <img
               alt="ms banks"
               className="object-scale-down h-200 w-150"
-              src="./images/MsBanks-carousel.png"
+              src="./images/Music/MsBanks-carousel.png"
             />
             <h1 className="carousel-desktop-title">Ms Banks</h1>
           </div>
@@ -117,7 +117,7 @@ export default function RecordAndSong() {
             <img
               alt="avelino"
               className="object-scale-down h-200 w-150"
-              src="./images/Avelino-carousel.png"
+              src="./images/Music/Avelino-carousel.png"
             />
             <h1 className="carousel-desktop-title">Avelino</h1>
           </div>
@@ -127,7 +127,7 @@ export default function RecordAndSong() {
             <img
               alt="nsg"
               className="object-scale-down h-200 w-150"
-              src="./images/nsg.png"
+              src="./images/Music/nsg.png"
             />
             <h1 className="carousel-desktop-title">NSG</h1>
           </div>
@@ -137,7 +137,7 @@ export default function RecordAndSong() {
             <img
               alt="matt pokara"
               className="object-scale-down h-200 w-150"
-              src="./images/MattPokora-carousel.png"
+              src="./images/Music/MattPokora-carousel.png"
             />
             <h1 className="carousel-desktop-title">Matt Pokora</h1>
           </div>
@@ -147,7 +147,7 @@ export default function RecordAndSong() {
             <img
               alt="tion wayne"
               className="object-scale-down h-200 w-150"
-              src="./images/tion.png"
+              src="./images/Music/tion.png"
             />
             <h1 className="carousel-desktop-title">Tion Wayne</h1>
           </div>
@@ -157,7 +157,7 @@ export default function RecordAndSong() {
             <img
               alt="nines"
               className="object-scale-down h-200 w-150"
-              src="./images/Nines-carousel.png"
+              src="./images/Music/Nines-carousel.png"
             />
             <h1 className="carousel-desktop-title">Nines</h1>
           </div>
@@ -167,7 +167,7 @@ export default function RecordAndSong() {
             <img
               alt="steff london"
               className="object-scale-down h-200 w-150"
-              src="./images/SteffLondon-carousel.png"
+              src="./images/Music/SteffLondon-carousel.png"
             />
             <h1 className="carousel-desktop-title">Steff London</h1>
           </div>
@@ -177,7 +177,7 @@ export default function RecordAndSong() {
             <img
               alt="jacob banks"
               className="object-scale-down h-200 w-150"
-              src="./images/JacobBanks-carousel.png"
+              src="./images/Music/JacobBanks-carousel.png"
             />
             <h1 className="carousel-desktop-title">Jacob Banks</h1>
           </div>
@@ -186,7 +186,7 @@ export default function RecordAndSong() {
             <img
               alt="Tiggz da Author"
               className="object-scale-down h-200 w-150"
-              src="./images/TiggsdaAuthor.png"
+              src="./images/Music/TiggsdaAuthor.png"
             />
             <h1 className="carousel-desktop-title">Tiggz da Author</h1>
           </div>
@@ -196,7 +196,7 @@ export default function RecordAndSong() {
             <img
               alt="Ray Blk "
               className="object-scale-down h-200 w-150"
-              src="./images/RayBlk.png"
+              src="./images/Music/RayBlk.png"
             />
             <h1 className="carousel-desktop-title">Ray Blk </h1>
           </div>
@@ -205,7 +205,7 @@ export default function RecordAndSong() {
             <img
               alt="The Prodigy"
               className="object-scale-down h-200 w-150"
-              src="./images/Mood-carousel.png"
+              src="./images/TVandFilm/Mood-carousel.png"
             />
             <h1 className="carousel-desktop-title">The Prodigy</h1>
           </div>
@@ -214,7 +214,7 @@ export default function RecordAndSong() {
             <img
               alt="Professor Green"
               className="object-scale-down h-200 w-150"
-              src="./images/ProfessorGreen.png"
+              src="./images/Music/ProfessorGreen.png"
             />
             <h1 className="carousel-desktop-title">Professor Green</h1>
           </div>
