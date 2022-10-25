@@ -200,7 +200,7 @@ export default function RecordAndSong() {
             />
             <h1 className="carousel-desktop-title">Ray Blk </h1>
           </div>
-          <div>
+          {/* <div>
             <h1 className="carousel-mobile-title">The Prodigy</h1>
             <img
               alt="The Prodigy"
@@ -208,7 +208,7 @@ export default function RecordAndSong() {
               src="./images/TVandFilm/Mood-carousel.png"
             />
             <h1 className="carousel-desktop-title">The Prodigy</h1>
-          </div>
+          </div> */}
           <div>
             <h1 className="carousel-mobile-title">Professor Green</h1>
             <img
