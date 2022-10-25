@@ -62,12 +62,23 @@ export default function TvAndFilm() {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
+            <h1 className="carousel-mobile-title"> Black Panther</h1>
+            <img
+              alt="blackpanter "
+              className="object-scale-down h-200 w-150 hover:bg-black"
+              src="./images/TvandFilm/blackpanter.png"
+            />
+            <h1 className="carousel-desktop-title">Black Panther </h1>
+          </div>
+
+          <div>
+            
             <h1 className="carousel-mobile-title">George - Asda</h1>
             <img
               // onClick={handleShow}
               alt="asda advert"
               className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/ASDA-carousel.png"
+              src="./images/TvandFilm/ASDA-carousel.png"
             />
             {/* {showText ? (
               <p className="absolute text-center top-50 left-50">
@@ -79,13 +90,12 @@ export default function TvAndFilm() {
             )} */}
             <h1 className="carousel-desktop-title">George - Asda</h1>
           </div>
-
           <div>
             <h1 className="carousel-mobile-title">Top Boy - Netflix</h1>
             <img
               alt="topboy "
               className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/Topboy-carousel.png"
+              src="./images/TvandFilm/Topboy-carousel.png"
             />
             <h1 className="carousel-desktop-title">Top Boy - Netflix</h1>
           </div>
@@ -95,7 +105,7 @@ export default function TvAndFilm() {
             <img
               alt="mood"
               className="object-scale-down h-200 w-150"
-              src="./images/Mood-carousel.png"
+              src="./images/TvandFilm/Mood-carousel.png"
             />
             <h1 className="carousel-desktop-title">Mood - BBC3</h1>
           </div>
@@ -104,7 +114,7 @@ export default function TvAndFilm() {
             <img
               alt="I May Destroy You "
               className="object-scale-down h-200 w-150"
-              src="./images/IMayDestroyYou.png"
+              src="./images/TvandFilm/IMayDestroyYou.png"
             />
             <h1 className="carousel-desktop-title">I May Destroy You - BBC1</h1>
           </div>
@@ -113,7 +123,7 @@ export default function TvAndFilm() {
             <img
               alt="Land Rover "
               className="object-scale-down h-200 w-150"
-              src="./images/RangeRover .png"
+              src="./images/TvAndFilm/RangeRover%20.png"
             />
             <h1 className="carousel-desktop-title">Land Rover</h1>
           </div>
@@ -122,7 +132,7 @@ export default function TvAndFilm() {
             <img
               alt="Champions League - Wretch 32"
               className="object-scale-down h-200 w-150"
-              src="./images/ChampionsLeague.png"
+              src="./images/TvandFilm/ChampionsLeague.png"
             />
             <h1 className="carousel-desktop-title">Champions League/Wretch 32</h1>
           </div>
@@ -131,7 +141,7 @@ export default function TvAndFilm() {
             <img
               alt="Ibis Hotel"
               className="object-scale-down h-200 w-150"
-              src="./images/Ibis.png"
+              src="./images/TvandFilm/Ibis.png"
             />
             <h1 className="carousel-desktop-title">Ibis Hotel</h1>
           </div>
@@ -140,7 +150,7 @@ export default function TvAndFilm() {
             <img
               alt="The Eight Club "
               className="object-scale-down h-200 w-150"
-              src="./images/The8Club.png"
+              src="./images/TvandFilm/The8Club.png"
             />
             <h1 className="carousel-desktop-title">The 8 Club</h1>
           </div>
