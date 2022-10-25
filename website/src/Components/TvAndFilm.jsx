@@ -41,7 +41,7 @@ export default function TvAndFilm() {
   return (
     <>
       <Navbar />
-      <h2 className="pl-4 mt-5 text-3xl text-lightGray md:hidden">
+      <h2 className="text-center mt-5 text-3xl text-lightGray md:hidden">
         TV & FILM
       </h2>
       <div className="pb-14">
@@ -73,7 +73,7 @@ export default function TvAndFilm() {
 
           <div>
             
-            <h1 className="carousel-mobile-title">George - Asda</h1>
+            <h1 className="carousel-mobile-title text-white">George - Asda</h1>
             <img
               // onClick={handleShow}
               alt="asda advert"
@@ -123,18 +123,18 @@ export default function TvAndFilm() {
             <img
               alt="Land Rover "
               className="object-scale-down h-200 w-150"
-              src="./images/TvAndFilm/RangeRover%20.png"
+              src="./images/TvAndFilm/RangeRover.png"
             />
             <h1 className="carousel-desktop-title">Land Rover</h1>
           </div>
           <div>
-            <h1 className="carousel-mobile-title">Champions League/Wretch 32</h1>
+            <h1 className="carousel-mobile-title text-[20px]">Champions League/Wretch32</h1>
             <img
               alt="Champions League - Wretch 32"
               className="object-scale-down h-200 w-150"
               src="./images/TvandFilm/ChampionsLeague.png"
             />
-            <h1 className="carousel-desktop-title">Champions League/Wretch 32</h1>
+            <h1 className="carousel-desktop-title">Champions League/Wretch32</h1>
           </div>
           <div>
             <h1 className="carousel-mobile-title">Ibis Hotel</h1>
@@ -169,7 +169,7 @@ export default function TvAndFilm() {
               TV & FILM
             </h2>
             <h2 className="hidden back hover:text-lightGray">BACK</h2>
-            <h2 className=" px-2 items-center pt-2 text-lightGray md:hidden">
+            <h2 className=" px-2 items-center pt-2 hover:text-lightGray md:hidden">
               BACK
             </h2>
           </div>

@@ -6,7 +6,7 @@ export default function Publishing() {
   return (
     <div>
       <Navbar />
-      <h1 className="px-7  mt-5 text-lightGray md:hidden">PUBLISHING</h1>
+      <h1 className="text-center px-7  mt-5 text-lightGray md:hidden">PUBLISHING</h1>
       <div className="grid grid-cols-1  md:grid-cols-2  ">
         <div className="">
           <div className="px-7 md:px-6 pt-10 pb-6 flex items-center">

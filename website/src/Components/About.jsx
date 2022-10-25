@@ -18,7 +18,7 @@ export default function About() {
         <div className=''>
           <div className='px-10 pt-20 pb-6 flex items-center'>
             <h1>/kei:zi/ (kay.zee)</h1>
-            <button onClick={play} className="px-3"> <img src="../images/speaker.png" alt="speaker" className="w-6" /></button>  
+            {/* <button onClick={play} className="px-3"> <img src="../images/speaker.png" alt="speaker" className="w-6" /></button>   */}
           </div>
           
           
@@ -36,8 +36,9 @@ export default function About() {
           
               <img src="../images/thin-left-arrow.png" alt="left arrow" className='w-8 h-8 text-jet' />
               <div className="back2about text-jet hover:text-lightGray">
-                <h2 className="px-2 my-0 about">ABOUT</h2>
-                <h2 className="back hover:text-lightGray">BACK</h2>
+                <h2 className="hidden md:flex px-2 my-0 about">ABOUT</h2>
+                <h2 className="hidden back hover:text-lightGray">BACK</h2>
+                <h2 className="px-2 items-center pt-2 hover:text-lightGray md:hidden">BACK</h2>
               </div>
               
             </div>
@@ -47,7 +48,7 @@ export default function About() {
         </div>
 
 
-        <img src="../images/kzimg1.png" alt="about"  className='-mt-10 md:-mt-10  '/>
+        <img src="../images/kzimg1.png" alt="about"  className='-mt-2 md:-mt-10  '/>
 
       </div>
 

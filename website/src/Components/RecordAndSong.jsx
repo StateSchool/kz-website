@@ -41,7 +41,7 @@ export default function RecordAndSong() {
   return (
     <>
       <Navbar />
-      <h2 className="pl-4 mt-5 text-[23px] text-lightGray md:hidden">
+      <h2 className="text-center mt-5 text-[23px] text-lightGray md:hidden">
         PRODUCTION & SONGWRITING
       </h2>
       <div className="pb-14 ">
