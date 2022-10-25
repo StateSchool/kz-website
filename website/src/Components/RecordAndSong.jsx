@@ -52,7 +52,7 @@ export default function RecordAndSong() {
           draggable={false}
           showDots={true}
           infinite={true}
-          // autoPlaySpeed={2000}
+          autoPlaySpeed={40000}
           keyBoardControl={true}
           // customTransition="all .5"
           // transitionDuration={1000}
@@ -64,12 +64,11 @@ export default function RecordAndSong() {
           <div>
             <h1 className="carousel-mobile-title">Amaarae</h1>
             <img
-        
               alt="amarae"
               className="object-scale-down h-200 w-150 hover:bg-black"
               src="./images/Music/Amarae.png"
             />
-            
+
             <h1 className="carousel-desktop-title">Amarae</h1>
           </div>
 
@@ -190,7 +189,7 @@ export default function RecordAndSong() {
             />
             <h1 className="carousel-desktop-title">Tiggz da Author</h1>
           </div>
-        
+
           <div>
             <h1 className="carousel-mobile-title">Ray Blk </h1>
             <img
@@ -229,7 +228,9 @@ export default function RecordAndSong() {
             className="w-8 h-8 text-jet"
           />
           <div className="back2about text-jet hover:text-lightGray">
-            <h2 className="hidden md:flex px-2 my-0 about">PRODUCTION & SONGWRITING</h2>
+            <h2 className="hidden md:flex px-2 my-0 about">
+              PRODUCTION & SONGWRITING
+            </h2>
             <h2 className="hidden back hover:text-lightGray">BACK</h2>
             <h2 className=" px-2 items-center pt-2 text-lightGray md:hidden">
               BACK

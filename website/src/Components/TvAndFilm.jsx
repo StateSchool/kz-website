@@ -52,7 +52,8 @@ export default function TvAndFilm() {
           draggable={false}
           showDots={true}
           infinite={true}
-          // autoPlaySpeed={2000}
+          autoPlay={false}
+          autoPlaySpeed={40000}
           keyBoardControl={true}
           // customTransition="all .5"
           // transitionDuration={1000}
@@ -71,25 +72,8 @@ export default function TvAndFilm() {
             <h1 className="carousel-desktop-title">Black Panther </h1>
           </div>
 
-          <div>
-            
-            <h1 className="carousel-mobile-title text-white">George - Asda</h1>
-            <img
-              // onClick={handleShow}
-              alt="asda advert"
-              className="object-scale-down h-200 w-150 hover:bg-black"
-              src="./images/TvandFilm/ASDA-carousel.png"
-            />
-            {/* {showText ? (
-              <p className="absolute text-center top-50 left-50">
-                Please tell me this works i am not really sure what is going to
-                happen but hopefully this works
-              </p>
-            ) : (
-              <div></div>
-            )} */}
-            <h1 className="carousel-desktop-title">George - Asda</h1>
-          </div>
+          
+
           <div>
             <h1 className="carousel-mobile-title">Top Boy - Netflix</h1>
             <img
@@ -109,6 +93,8 @@ export default function TvAndFilm() {
             />
             <h1 className="carousel-desktop-title">Mood - BBC3</h1>
           </div>
+          
+         
           <div>
             <h1 className="carousel-mobile-title">I May Destroy You - BBC1</h1>
             <img
@@ -127,6 +113,26 @@ export default function TvAndFilm() {
             />
             <h1 className="carousel-desktop-title">Land Rover</h1>
           </div>
+          <div>
+            
+            <h1 className="carousel-mobile-title text-white">George - Asda</h1>
+            <img
+              // onClick={handleShow}
+              alt="asda advert"
+              className="object-scale-down h-200 w-150 hover:bg-black"
+              src="./images/TvandFilm/ASDA-carousel.png"
+            />
+            {/* {showText ? (
+              <p className="absolute text-center top-50 left-50">
+                Please tell me this works i am not really sure what is going to
+                happen but hopefully this works
+              </p>
+            ) : (
+              <div></div>
+            )} */}
+            <h1 className="carousel-desktop-title">George - Asda</h1>
+          </div>
+
           <div>
             <h1 className="carousel-mobile-title text-[20px]">Champions League/Wretch32</h1>
             <img
